@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Comment {
+  _id: String!
+  comment: String!
+}
+
+type Post {
+  _id: String!
+  title: String!
+  slug: String!
+  body: String!
+  comments: [String!]!
+}
+
+type Query {
+  getPostById(_id: String!): Post!
+  comment(_id: String!): Comment!
+}
